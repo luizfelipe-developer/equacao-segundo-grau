@@ -15,12 +15,17 @@ function calcular() {
   }
   if (delta < 0) {
     document.getElementById("delta").innerHTML = "Delta:" + delta;
-    document.querySelector(".result-raiz").innerHTML =
-      "A equação não possui raízes reais";
-    return;
+    document.querySelector(".result-raiz").innerHTML = "A equação não possui raízes reais";
+    
+  }
+  if (b > 0 ) {
+   b = '+'+b
+  }
+  if (c>=0) {
+   c = '+'+c
   }
   document.getElementById("delta").innerHTML = "Delta:" + delta;
   document.getElementById("x1").innerHTML = "x' : " + x1.toFixed(2);
   document.getElementById("x2").innerHTML = 'x" : ' + x2.toFixed(2);
-  return;
+  document.querySelector('.equacao').innerHTML = `EQUAÇÃO: ${a}x² ${b}x ${c} = 0`
 }

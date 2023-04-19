@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
     <title>Document</title>
+    <style>
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+    </style>
   </head>
 
   <body>
@@ -27,6 +37,7 @@
         </div>
       </form>
       <div class="caixa-result">
+        <div class="equacao"></div>
         <div id="delta" class="result-delta">
           <!-- Delta: <span >-</span> -->
         </div>
