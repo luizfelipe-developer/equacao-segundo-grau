@@ -1,49 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="container">
-        <h1>Calculadora de Equação de 2° grau</h1>
-        <form id="caixa-delta">
-            <label for="vlA">Digite o valor de a</label>
-            <input type="number" name="vlA" id="vlA">
+      <h1>Calculadora de Equação de 2° grau</h1>
+      <form id="caixa-delta">
+        <label for="vlA">Digite o valor de a</label>
+        <input type="number" name="vlA" id="vlA" />
 
-            <label for="vlB">Digite o valor de b</label>
-            <input type="number" name="vlB" id="vlB">
+        <label for="vlB">Digite o valor de b</label>
+        <input type="number" name="vlB" id="vlB" />
 
-            <label for="vlC">Digite o valor de c</label>
-            <input type="number" name="vlC" id="vlC">
+        <label for="vlC">Digite o valor de c</label>
+        <input type="number" name="vlC" id="vlC" />
 
-            <div id="box-button">
-                <button type="button" onclick="calcular()">Calcular</button>
-            </div>
-        </form>
-        <div class="caixa-result">
-            <div id="delta" class="result-delta">
-                <!-- Delta: <span >-</span> -->
-            </div>
-            <div class="result-raiz">
-                <div id="x1" class="raiz1">
-                    <!-- Raízes: x1 = <span >-</span><br> -->
-                </div>
-                <div id="x2" class="raiz2">
-                    <!-- x2 = <span >-</span> -->
-                </div>
-            </div>
-
-
-
+        <div id="box-button">
+          <button type="button" onclick="calcular()">Calcular</button>
         </div>
+      </form>
+      <div class="caixa-result">
+        <div id="delta" class="result-delta">
+          <!-- Delta: <span >-</span> -->
+        </div>
+        <div class="result-raiz">
+          <div id="x1" class="raiz1">
+            <!-- Raízes: x1 = <span >-</span><br> -->
+          </div>
+          <div id="x2" class="raiz2">
+            <!-- x2 = <span >-</span> -->
+          </div>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
