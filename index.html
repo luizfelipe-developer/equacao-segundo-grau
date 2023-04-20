@@ -1,55 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-    <title>Equação 2° Grau</title>
-    <style>
-      input::-webkit-outer-spin-button,
-      input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-      }
-      /* input[type="number"] {
-        -moz-appearance: textfield;
-      } */
-    </style>
-  </head>
 
-  <body>
-    <div id="container">
-      <h1>Calculadora de Equação de 2° grau</h1>
-      <form id="caixa-delta">
-        <label for="vlA">Digite o valor de a</label>
-        <input type="number" name="vlA" id="vlA" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+  <title>Equação 2° Grau</title>
+  <style>
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
 
-        <label for="vlB">Digite o valor de b</label>
-        <input type="number" name="vlB" id="vlB" />
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+  </style>
+</head>
 
-        <label for="vlC">Digite o valor de c</label>
-        <input type="number" name="vlC" id="vlC" />
+<body>
+  <div id="container">
+    <h1>Calculadora de Equação de 2° grau</h1>
+    <form id="caixa-delta">
+      <div>
+      <label for="vlA">Digite o valor de a</label>
+      <input type="number" name="vlA" id="vlA" />
+    </div>
+    <div>
+      <label for="vlB">Digite o valor de b</label>
+      <input type="number" name="vlB" id="vlB" />
+    </div>
 
-        <div id="box-button">
-          <button type="button" onclick="calcular()">Calcular</button>
+    <div>
+      <label for="vlC">Digite o valor de c</label>
+      <input type="number" name="vlC" id="vlC" />
+    </div>
+
+      <div id="box-button">
+        <button type="button" onclick="calcular()">Calcular</button>
+      </div>
+    </form>
+    <div class="caixa-result">
+      <div class="equacao"></div>
+      <div id="delta">
+        <!-- Delta: <span >-</span> -->
+      </div>
+      <div class="result-raiz">
+        <div id="x1" >
+          <!-- Raízes: x1 = <span >-</span><br> -->
         </div>
-      </form>
-      <div class="caixa-result">
-        <div class="equacao"></div>
-        <div id="delta" class="result-delta">
-          <!-- Delta: <span >-</span> -->
-        </div>
-        <div class="result-raiz">
-          <div id="x1" class="raiz1">
-            <!-- Raízes: x1 = <span >-</span><br> -->
-          </div>
-          <div id="x2" class="raiz2">
-            <!-- x2 = <span >-</span> -->
-          </div>
+        <div id="x2">
+          <!-- x2 = <span >-</span> -->
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
