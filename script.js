@@ -16,8 +16,6 @@ function calcular() {
   if (delta < 0) {
     document.getElementById("delta").innerHTML = "Delta:" + delta;
     document.querySelector(".result-raiz").innerHTML = "A equação não possui raízes reais";
-    return;
-
   }
   document.getElementById("delta").innerHTML = `Δ: (${b})² - 4*(${a})*(${c}) = ${delta}`;
   if (b > 0) {
